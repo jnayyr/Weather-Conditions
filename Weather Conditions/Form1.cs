@@ -67,7 +67,7 @@ namespace Weather_Conditions
                     String weatherFilePath = Path.Combine(tempFileDirectory, "weather_image.jpeg"); // plus filename to make a complete path
                     Debug.WriteLine(weatherFilePath);
                     client.DownloadFile(weatherPhotoUrl, weatherFilePath); // download image from url
-                    weatherImage - Image.FromFile(weatherFilePath);
+                    weatherImage - Image.FromFile(weatherFilePath); // clarify with clara
                 }
                 return true;
             }
